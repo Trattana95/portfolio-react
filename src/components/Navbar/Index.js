@@ -6,13 +6,12 @@ import "./Navbar.css";
 
 function Navbar(props) {
     return (
-        <div className="flexbox-container">
-               <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-dark ">
-        <div className="container-fluid">
+        <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-dark ">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
-        
+                <div className="container-fluid">
+
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav mr-auto"></ul>    
                 <ul className="navbar-nav ml-auto">
@@ -34,7 +33,6 @@ function Navbar(props) {
         </div>    
     </nav>
  
-        </div>
     )
 }
 

@@ -1,19 +1,23 @@
 import React from "react";
-import Navbar from "../components/Navbar/Index";
-import Card from "../components/Card/Index";
-import Container from "../components/Container/Index";
+
 // import "./contact.css";
 
 
 function Contact() {
     return (
-        <div>
-            <Navbar/>
-            
-            <Container>
-                <Card>
+        <div className="container-fluid" id="AboutMeCont">
+        <div className="container padding" id="jumbo">
+            <div className="jumbotron">
+                <h1 className="display-4" id="About">Feel free to contact me!</h1>
+                <hr className="light" color="black"/>
+    
+                <div className="row">
+                    <div className="col-lg-3">
+                    </div>
+                    <div className="col-lg-9" id="Contact Me">
                     <div className="form-group">
-                        <p class="card-text">Email: <a href="mailto:ThomR95@gmail.com">ThomR95@gmail.com</a></p>
+                        <h3> Email: </h3> 
+                        <h4><a href="mailto:ThomR95@gmail.com"target="_blank" rel="noreferrer noopener">ThomR95@gmail.com</a></h4>
                     </div>
                     <div className="form-group">
                         <h3>LinkedIn:</h3>
@@ -27,9 +31,10 @@ function Contact() {
                             <a href="https://github.com/Trattana95" target="_blank" rel="noreferrer noopener" className="link">Click Me!</a>
                         </h4>
                     </div>
-                </Card>
-            </Container>
-
+            </div>
+    </div> 
+</div>
+</div>
         </div>
 
     );

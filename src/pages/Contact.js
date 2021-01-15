@@ -1,14 +1,17 @@
 import React from "react";
-// import Container from "../components/Container";
-// import Card from "../components/Card";
+import Navbar from "../components/Navbar/Index";
+import Card from "../components/Card/Index";
+import Container from "../components/Container/Index";
 // import "./contact.css";
 
 
 function Contact() {
     return (
         <div>
-            {/* <Container> */}
-                {/* <Card> */}
+            <Navbar/>
+            
+            <Container>
+                <Card>
                     <div className="form-group">
                         <p class="card-text">Email: <a href="mailto:ThomR95@gmail.com">ThomR95@gmail.com</a></p>
                     </div>
@@ -24,8 +27,9 @@ function Contact() {
                             <a href="https://github.com/Trattana95" target="_blank" rel="noreferrer noopener" className="link">Click Me!</a>
                         </h4>
                     </div>
-                {/* </Card> */}
-            {/* </Container> */}
+                </Card>
+            </Container>
+
         </div>
 
     );

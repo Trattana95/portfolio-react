@@ -16,15 +16,12 @@ function Navbar(props) {
                 <ul className="navbar-nav mr-auto"></ul>    
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item active">
-                        {/* <a className="nav-link" href={props.about}>About</a> */}
                         <Link className="nav-link" to="/about">About</Link>
                     </li>
                     <li className="nav-item active">
-                        {/* <a className="nav-link" href="/portfolio">Portfolio</a> */}
                         <Link className="nav-link" to="/portfolio">Portfolio</Link>
                     </li>
                     <li className="nav-item active">
-                        {/* <a className="nav-link" href="/contact">Contact</a> */}
                         <Link className="nav-link" to="/contact">Contact</Link>
                     </li>
                     

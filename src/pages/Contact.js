@@ -22,13 +22,13 @@ function Contact() {
                     <div className="form-group">
                         <h3>LinkedIn:</h3>
                         <h4>
-                        <a href="https://www.linkedin.com/in/keodavone-rattana-0711ba1b9/"target="_blank" rel="noreferrer noopener" className="link">Click Me!</a>
+                        <a href="https://www.linkedin.com/in/keodavone-rattana-0711ba1b9/"target="_blank" rel="noreferrer noopener" className="link">Click Here!</a>
                         </h4>
                     </div>
                     <div className="form-group">
                         <h3>GitHub:</h3>
                         <h4>
-                            <a href="https://github.com/Trattana95" target="_blank" rel="noreferrer noopener" className="link">Click Me!</a>
+                            <a href="https://github.com/Trattana95" target="_blank" rel="noreferrer noopener" className="link">Click Here!</a>
                         </h4>
                     </div>
             </div>

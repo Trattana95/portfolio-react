@@ -1,50 +1,52 @@
 import React, { Component }from "react";
 import Card from "../components/Card/Index";
 import Container from "../components/Container/Index";
-// import Row from "../components/Row";
 import Project from "../components/Project/Index";
+
+
 
 
 class Portfolio extends Component {
 
-    state = [{
+    state = [
+        {
         title: "Burger-logger",
-        image: "image/",
+        image: "image/burger.png",
         alt: "Burger",
         deployed: "https://infinite-dawn-87221.herokuapp.com/",
         code: "https://github.com/Trattana95/burger-logger.git",
     },
     {
         title: "Weather-Dashboard",
-        image: "image/",
+        image: "image/Weather.png",
         alt: "Weather-Dashboard",
         deployed: "https://trattana95.github.io/Weather-Dashboard/",
         code: "https://github.com/Trattana95/Weather-Dashboard.git",
     },
     {
         title: "Travel-Advisory",
-        image: "image/",
+        image: "image/HHH.png",
         alt: "Travel",
         deployed: "https://hhh-603.github.io/Project-1_Travel-Advisory-Website/",
         code: "https://github.com/HHH-603/Project-1_Travel-Advisory-Website.git",
     },
     {
         title: "Day-Planner",
-        image: "image/",
+        image: "image/DayPlanner.png",
         alt: "Day-planner",
         deployed: "https://guarded-inlet-46841.herokuapp.com/",
         code: "https://github.com/Trattana95/Day-Planner.git",
     },
     {
         title: "Employee-Directory",
-        image: "image/",
+        image: "image/Emp-Dir.png",
         alt: "Employee-Directory",
         deployed: "https://trattana95.github.io/employee-directory/",
         code: "https://github.com/Trattana95/employee-directory.git",
     },
     {
         title: "online-offline Budget Tracker",
-        image: "image/",
+        image: "image/Online-Offline.png",
         alt: "Budget Tracker",
         deployed: "https://pure-refuge-02314.herokuapp.com/",
         code: "https://github.com/Trattana95/Online-Offline-Budget-Tracker.git",
@@ -63,7 +65,7 @@ class Portfolio extends Component {
           
                 <Container>
                     <Card>
-                        {/* <Row> */}
+                       
                             <Project
                                 title={this.state[0].title}
                                 image={this.state[0].image}
@@ -85,8 +87,7 @@ class Portfolio extends Component {
                                 deployed={this.state[2].deployed}
                                 code={this.state[2].code}
                             ></Project>
-                        {/* </Row>
-                        <Row> */}
+                      
                             <Project
                                 title={this.state[3].title}
                                 image={this.state[3].image}
@@ -108,11 +109,10 @@ class Portfolio extends Component {
                                 deployed={this.state[5].deployed}
                                 code={this.state[5].code}
                             ></Project>
-                        {/* </Row> */}
                     </Card>
                 </Container>
             </div >
         );
     }
 }
-export default Portfolio
+export default Portfolio;

@@ -2,51 +2,54 @@ import React, { Component }from "react";
 import Card from "../components/Card/Index";
 import Container from "../components/Container/Index";
 import Project from "../components/Project/Index";
-
-
-
+import burger from "../image/burger.png"
+import weather from "../image/Weather.png"
+import travel from "../image/HHH.png"
+import day from "../image/DayPlanner.png"
+import employee from "../image/Emp-Dir.png"
+import budget from "../image/Online-Offline.png"
 
 class Portfolio extends Component {
 
     state = [
         {
         title: "Burger-logger",
-        image: "image/burger.png",
+        image: burger,
         alt: "Burger",
         deployed: "https://infinite-dawn-87221.herokuapp.com/",
         code: "https://github.com/Trattana95/burger-logger.git",
     },
     {
         title: "Weather-Dashboard",
-        image: "image/Weather.png",
+        image: weather,
         alt: "Weather-Dashboard",
         deployed: "https://trattana95.github.io/Weather-Dashboard/",
         code: "https://github.com/Trattana95/Weather-Dashboard.git",
     },
     {
         title: "Travel-Advisory",
-        image: "image/HHH.png",
+        image: travel,
         alt: "Travel",
         deployed: "https://hhh-603.github.io/Project-1_Travel-Advisory-Website/",
         code: "https://github.com/HHH-603/Project-1_Travel-Advisory-Website.git",
     },
     {
         title: "Day-Planner",
-        image: "image/DayPlanner.png",
+        image: day,
         alt: "Day-planner",
         deployed: "https://guarded-inlet-46841.herokuapp.com/",
         code: "https://github.com/Trattana95/Day-Planner.git",
     },
     {
         title: "Employee-Directory",
-        image: "image/Emp-Dir.png",
+        image: employee,
         alt: "Employee-Directory",
         deployed: "https://trattana95.github.io/employee-directory/",
         code: "https://github.com/Trattana95/employee-directory.git",
     },
     {
         title: "online-offline Budget Tracker",
-        image: "image/Online-Offline.png",
+        image: budget,
         alt: "Budget Tracker",
         deployed: "https://pure-refuge-02314.herokuapp.com/",
         code: "https://github.com/Trattana95/Online-Offline-Budget-Tracker.git",
@@ -65,7 +68,6 @@ class Portfolio extends Component {
           
                 <Container>
                     <Card>
-                       
                             <Project
                                 title={this.state[0].title}
                                 image={this.state[0].image}

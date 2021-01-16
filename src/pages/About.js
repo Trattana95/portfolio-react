@@ -1,4 +1,5 @@
 import React from "react";
+import thom from "../image/IMG_9717.JPG"
 
 function About() {
     return (
@@ -8,15 +9,14 @@ function About() {
             <h1 className="display-4" id="About">About Me </h1>
             <hr className="light" color="black"/>
 
-            <div className="row">
-                <div className="col-lg-3">
+            <div className="row" style={{flexWrap:"nowrap"}}>
+                <div className="col-lg-6">
+                    <img src={thom} alt="Me" style={{width: "100%"}}></img> 
                 </div>
-                <div className="col-lg-9" id="aboutme">
-                <img src="image/IMG_9717.JPG" alt="Me" className="float-left mr-3"></img> 
+                <div className="col-lg-6" id="aboutme">
                 <h5 className="card-title">ABOUT ME</h5>
                 <p className="card-text">Hello, my name is Keodavone Thom Rattana, but I go by Thom. I´m studying to become a Full Stack Web Developer.</p>
                 <p className="card-text">I´m currently studying at UNC cCharlotte Coding BootCamp. I have gained experience in HTML5, CSS, JavaScript, NodeJS, Express, MySQL, Mongo DB and React.</p>                
-           
                 </div>    
             </div>
         </div>
@@ -25,7 +25,5 @@ function About() {
 
     )
 }
-
-
 
 export default About;
